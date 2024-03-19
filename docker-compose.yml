@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  backend:
+    build: mybackend
+    ports:
+      - 8080:8080
+    volumes:
+      - ./img_file:/img_file
+      - ./img_file/masking_img:/img_file/masking_img
+      - ./img_file/out_img:/img_file/out_img
+      - ./img_file/in_img:/img_file/in_img
+      - ./img_file/vis_img:/img_file/vis_img
